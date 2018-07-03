@@ -50,6 +50,7 @@ function total() {
   return (addPrice);
 }
 
+<<<<<<< HEAD
 function removeFromCart(item) {
   console.log(item);
   for (let i = 0; i < cart.length; i++){  
@@ -61,6 +62,11 @@ function removeFromCart(item) {
     }
   }
   return cart;
+=======
+function removeFromCart(itemName) {
+  
+  return ("That item is not in your cart.");
+>>>>>>> 26b131791ab628ff88abeecbe5595c1eecd7ff76
 }
 
 function placeOrder(cardNumber) {
@@ -68,9 +74,15 @@ function placeOrder(cardNumber) {
     return ("Sorry, we don't have a credit card on file for you.");
   }
   else {
+<<<<<<< HEAD
     let addPrice = total();
     cart = [];
     return (`Your total cost is $${addPrice}, which will be charged to the card ${cardNumber}.`);
+=======
+    total();
+    cart = [];
+    return (`your total cost is ${total()}, which will be charged to the card ${cardNumber}.`);
+>>>>>>> 26b131791ab628ff88abeecbe5595c1eecd7ff76
   }
 
 }
